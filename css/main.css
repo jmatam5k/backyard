@@ -1,0 +1,128 @@
+.logo{
+	height: 40px;
+	width: 130px;
+}
+
+ul{
+	margin-left: 23%;
+}
+.menu{
+	display: table-cell;
+	padding: 10px;
+	text-decoration: none;
+}
+a{
+	color: black;
+}
+.fondo{
+	background-color: #3F4867;
+	height: 380px;
+}
+h1{
+	font-size: 30px;
+	color: white;
+	padding-top: 40px;
+}
+.parrafo{
+	color: white;
+}
+
+/*FORMULARIO*/
+#envoltura{
+    width: 330px;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+#smallcont{
+    background-color:#40A7AD;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
+    /*Las 3 líneas siguientes, sirven para el borde redondeado
+    * pero para diferentes navegadores*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+#cabecera{
+    border-bottom: 5px solid #333;
+    padding-top: 5px;
+    height:70px;
+    line-height:50px;
+    text-align:center;
+}
+
+#cuerpo{
+    background:#ececec;
+    border:solid #ccc;
+    /*aumentando en 2px el borde es mas redondo*/
+    border-width: 2px 0;
+    padding:15px 35px;
+}
+
+input{
+   /*box-shadow hace efecto de profundidad*/
+   border-radius:6px; /*probar con 10px se hacen ovalados los inputs*/
+   box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+   font:bold 12px 
+   height: 24px;
+   line-height: 20px;
+   padding:0 2px;
+   width: 230px;
+}
+
+input#usuario{
+    background:#ffc;
+    
+}
+
+input#contrasenia{
+    background:#ffc;
+}
+
+.boton{
+    background: #ccc;
+    background: -webkit-linear-gradient(top,#fc6,#f63);
+    background: linear-gradient(top,#fc6,#f63);
+    /*Color del texto*/
+    color: #666;
+    width: 120px;
+}
+
+/*:active anima el boton enviar para que se vea como si se pulsara*/
+.boton:active{
+    position: relative;
+    top: 3px;
+}
+
+
+form,p{
+    margin:0;
+}
+
+/*Para separar el botón de ingresar*/
+p#bot{
+    padding-top: 10px;
+}
+
+/*media jquery*/
+
+@media (min-width: 535px) and (max-width: 825px){
+    [class*="col-" ]{
+        width: 100%;
+    }
+    .container{
+        width: 100%; /*no funciona, queda sujeto a investigacion*/
+    }
+
+    body{  
+        background-color:#555;  
+    }
+    h1{
+        color: red;
+    } 
+    .fondo{
+        background-color: yellow;
+    }
+
+}
