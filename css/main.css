@@ -124,5 +124,7 @@ p#bot{
     .fondo{
         background-color: yellow;
     }
-
+    #envoltura{
+        margin-left: 10px;
+    }
 }
